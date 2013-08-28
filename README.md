@@ -25,8 +25,8 @@ zbx.request('hostgroup.get', {hostids: 1}, function (err, res) {
 
 
 // Acturally there is another api method but I don't really think you'll need that.
-// In case that you may want to just test if the user/password is valid ,`login` is for this job.
-zbx.request(function (err, auth_token) {
+// In case that you may want to just test if the user/password is valid ,`login` is for this.
+zbx.login(function (err, auth_token) {
   err || console.log(auth_token);
 }
 ```
