@@ -32,9 +32,6 @@ function ZabbixApi (user, password, api_url) {
  */
 
 ZabbixApi.prototype.request = function (method, params, fn) {
-  if (!this.user || !this.password || !this.api_url) {
-    throw new Error("Cannot send request. Please set user, password and api_url");
-  }
   var self = this;
   this.auth(function(error, self) {
     if (error) {
