@@ -41,7 +41,7 @@ describe('ZabbixApi', function () {
     it('should reutrn error when authentication failed', function (done) {
       fakeone.request('host.get', {hostids: hostid}, function(err, result) {
         should.not.exist(result);
-        // err.should.be.a('Error').;
+        err.should.be.instanceof(Object);
         done();
       });
     });
