@@ -1,6 +1,6 @@
 {
   "name": "zabbix-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "zabbix api wrapper",
   "main": "index.js",
   "dependencies": {
