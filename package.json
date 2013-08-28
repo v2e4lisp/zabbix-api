@@ -1,27 +1,27 @@
 {
   "name": "zabbix-api",
   "version": "0.0.1",
-  "description": "zabbix api wrapper.",
+  "description": "zabbix api wrapper",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "request": "~2.27.0"
   },
-  "repository": "git@github.com:v2e4lisp/zabbix-api.git",
-  "homepage": "https://github.com/v2e4lisp/zabbix-api",
+  "devDependencies": {
+    "should": "~1.2.2",
+    "mocha": "~1.12.0"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/v2e4lisp/zabbix-api.git"
+  },
   "keywords": [
     "zabbix",
     "api"
   ],
-  "author": {
-    "name": "wenjun.yan",
-    "email": "mylastnameisyan@gmail.com"
-  }
+  "author": "wenjun.yan",
   "license": "MIT",
-  "dependencies": {
-    "request": "~2.27.0"
-  }
-  "devDependencies": {
-    "should": "~1.2.2",
-    "mocha": "~1.12.0"
-  }
+  "readmeFilename": "README.md"
 }
